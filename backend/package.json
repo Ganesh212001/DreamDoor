@@ -4,8 +4,7 @@
   "description": "Dream Door Is A Property Rental Website",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon start/server.js",
-    "server": "nodemon start/server.js",
+    "start": "node server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
