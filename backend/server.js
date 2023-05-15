@@ -29,9 +29,9 @@ dotenv.config({ path:'./config/config.env' })
 const stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
 
 
-connectDB().then(
-    app.listen(PORT, '0.0.0.0', () => { console.log(`Server running on port ${PORT}`.yellow) })
-)
+
+    
+
 
 addDataToCollection()
 
@@ -76,6 +76,10 @@ app.use('/deleteuser', deleteUserRoute)
 app.use('/addemail', addEmailRoute)
 app.use('/allemails', allEmailsRoute)
 app.use('/deleteemail', deleteEmailRoute)
+
+
+connectDB()
+app.listen(PORT, '0.0.0.0', () => { console.log(`Server running on port ${PORT}`.yellow) })
 
 // Place after routes
 // Render => Serving the frontend
