@@ -3,7 +3,7 @@
   "name": "elliecastelli",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5000",
+  "proxy": "dream-door-d00e9z2ro-ganesh212001.vercel.app",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@reduxjs/toolkit": "^1.8.3",
